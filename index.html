@@ -11,21 +11,32 @@
     <title>Working</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-content">
+            <input placeholder="Фамилия" type="text">
+            <input placeholder="Имя" type="text">
+            <input placeholder="Отчество" type="text">
+            <input placeholder="Дата рождения" type="text">
+            <input placeholder="Город" type="text">
+            <button class="modal__reg-button">Регистрация</button>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="title-wrapper">
-                <h1 class="header__title">Working</h1>
+                <p class="site-title">Working</p>
                 <nav class="menu">
                     <ul>
-                        <li>Поиск работы</li>
-                        <li>Поиск работников</li>
+                        <li><a href="#!">Поиск работы</a></li>
+                        <li><a href="#!">Поиск работников</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="login-panel">
-                <button class="reg">Registration</button>
-                <button class="auth">Login</button>
+                <button class="reg">Регистрация</button>
+                <button class="auth">Войти</button>
             </div>
+            
 
         </div>
     </header>
@@ -33,17 +44,115 @@
         <section class="welcome">
             <div class="container">
                 <div class="find-work-column">
-                    <h2 class="welcome__title">
+                    <h1 class="welcome__title">
                         За один клик - </br>
                         найдешь работу своей мечты 
-                    </h2>
+                    </h1>
                     <form action="" class="form-find-job">
-                        <input type="text" placeholder="Должность или компания">
-                        <input type="text" placeholder="Город, страна">
+                        <input class="welcome__input-first" type="text" placeholder="Должность или компания">
+                        <input class="welcome__input-second" type="text" placeholder="Город, страна">
                         <button>Искать</button>
                     </form>
                 </div>
-                <img src="" alt="Looking for job">
+                <img src="./src/img/welcome-img.png" alt="Looking for job">
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <p>Помогаем найти работу</p>
+                <div class="contacts__social">
+                    <a href="#!">
+                        <img src="./src/img/YouTube.png" alt="youtube">
+                    </a>
+                    <a href="#!">
+                        <img src="./src/img/What.png" alt="whats app">
+                    </a>
+                    <a href="#!">
+                        <img src="./src/img/Viber.png" alt="viber">
+                    </a>
+                    <a href="#!">
+                        <img src="./src/img/Insta.png" alt="instagram">
+                    </a>
+                    <a href="#!">
+                        <img src="./src/img/Twit.png" alt="twitter">
+                    </a>
+                    <a href="#!">
+                        <img src="./src/img/Face.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <h2>Работа <br> по категориям</h2>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <img src="./src/img/Банк.svg" alt="">
+                        <p>Финансы</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/Скорая.svg" alt="">
+                        <p>Медицина</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/Ресторан.svg" alt="">
+                        <p>Ресторан</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/Медиа.svg" alt="">
+                        <p>Мультимедиа</p>
+                    </div>
+                    <div class="card">
+                        <img src="./src/img/Образование.svg" alt="">
+                        <p>Образование</p>
+                    </div>
+                </div>
+                <button class="more-button">Больше категорий</button>
+            </div>
+        </section>
+        <section class="vacancies">
+            <div class="container">
+                <div class="title-wrapper">
+                    <h2>Новые вакансии</h2>
+                    <p class="subtitle">Найди работу своей мечты прямо сейчас</p>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <p class="card-title">Финансы</p>
+                        <div class="card-desc">
+                            <p>Менеджер <br> по управлению финансами в крупной компании</p>
+                        </div>
+                        <p class="card-city"> Москва </p>
+                        <div class="card-footer">
+                            <img src="" alt="">
+                            <p> Ford. 2 дня назад  </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="card-title">Грузоперевозки</p>
+                        <div class="card-desc">
+                            <p>Водитель на дальние <br> дистанции</p>
+                        </div>
+                        <p class="card-city">Санкт-Петербург
+                        </p>
+                        <div class="card-footer">
+                            <img src="" alt="">
+                            <p>Coca Cola. 1 день назад</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="card-title">Дизайн</p>
+                        <div class="card-desc">
+                            <p> Дизайнер интерьера в профессиональную студию в центре города</p>
+                        </div>
+                        <p class="card-city">Москва </p>
+                        <div class="card-footer">
+                            <img src="" alt="">
+                            <p>Netflix. 4 дня назад</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="more-button">Больше вакансий</button>                
             </div>
         </section>
     </main>
@@ -52,5 +161,6 @@
 
         </div>
     </footer>
+    <script src="./src/srcipt.js"></script>
 </body>
 </html>
